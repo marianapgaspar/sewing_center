@@ -27,4 +27,4 @@ Route::get('produtos/{slug}', [CategoryController::class, 'show'])->name('produc
 Route::get('blog', BlogController::class)->name('site.blog');
 Route::view('sobre', 'site.about.index')->name('site.about');
 Route::get('contato', [ContactController::class, 'index'])->name('site.contact');
-Route::post('contato', [ContactController::class, 'form'])->name('site.contact.form');
+Route::post('contato', [ContactController::class, 'contact'])->name('site.contact.form');
