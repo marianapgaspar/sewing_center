@@ -9,13 +9,8 @@
             <section class="contact__options">
 
                 <form class="contact__form" action="{{route('site.contact.form')}}" method="post">
-                <input id="name" name="name" type="text" tabindex="1" placeholder="Ex: José da Silva"
-                           autofocus >  
-                           <input id="email" name="email" type="text" tabindex="2" placeholder="Ex: email@email.com.br">
-                           <textarea id="message" name="message" tabindex="3" cols="20" rows="4"
-                              placeholder="Digite aqui..."></textarea>
                     @csrf
-                  <!--    @if(session('success'))
+                    @if(session('success'))
                         <div>
                             {{session('message')}}
                         </div>
@@ -41,7 +36,7 @@
                               placeholder="Digite aqui...">{{old('message')}}</textarea>
                     @error('message')
                     <div>{{ $message }}</div>
-                    @enderror -->
+                    @enderror
 
                     <button class="button button_primary" type="submit">Enviar mensagem</button>
                 </form>

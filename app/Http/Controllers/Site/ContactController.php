@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ContactFormRequest;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Notification;
@@ -20,10 +21,13 @@ class ContactController extends Controller
         return view('site.contact.index');
     }
 
-    public function contact(Request $request){
+    public function contact(ContactFormRequest $request){
         $contact = Contact::create($request->all());
         Notification::route('mail', config('mail.from.address'))
             ->notify(new NewContact($contact));
-        ddd($request->all());
+        
+        return redirect()->route('site.contact')->with([
+            'success'=>true, 
+            'message'=>'Contato criado com sucesso']);
     }
 }
