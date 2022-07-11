@@ -10,7 +10,7 @@
     <!-- Products list -->
     <div class="gray-background">
         <section class="products__cultivation__category main-wrapper">
-            <!-- @foreach($categories as $category)
+            @foreach($categories as $category)
                 <article class="card__product">
                     <a href="{{route('site.products.category', ['category' => $category])}}">
                         <div class="card__cover">
@@ -22,6 +22,7 @@
                         </header>
                     </a>
                 </article>
-            @endforeach -->
+            @endforeach
         </section>
     </div>
+@endsection

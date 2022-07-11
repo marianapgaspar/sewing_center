@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('site.home');
 Route::get('produtos', [CategoryController::class, 'index'])->name('site.products');
-Route::get('produtos/{slug}', [CategoryController::class, 'show'])->name('products.category');
+Route::get('produtos/{category}', [CategoryController::class, 'show'])->name('site.products.category');
 Route::get('blog', BlogController::class)->name('site.blog');
 Route::view('sobre', 'site.about.index')->name('site.about');
 Route::get('contato', [ContactController::class, 'index'])->name('site.contact');

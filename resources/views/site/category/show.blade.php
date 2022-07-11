@@ -17,8 +17,8 @@
                         <img src="{{asset($category->image)}}" style="width: 322px;">
                     </div>
                     <header class="card__product-header">
-                        <!-- <h2 class="title-medium">{{$category->name}}</h2>
-                        <p>{{$category->description}}</p> -->
+                        <h2 class="title-medium">{{$category->name}}</h2>
+                        <p>{{$category->description}}</p>
                     </header>
                 </a>
             </article>
@@ -30,7 +30,7 @@
                 <h2 class="title-large">Cum quadra ridetis, omnes visuses imitari regius, brevis brodiumes. </h2>
                 <p>Ususs favere! Tabes grandis palus est. Sunt mensaes magicae fatalis, placidus genetrixes. Cum musa unda, omnes amores attrahendam pius, noster particulaes. </p>
             </header>
-            <!-- @foreach($category->products as $product)
+            @foreach($category->products as $product)
             <article class="product">
                 <a class="clickable-area" href="javascript:;">
                     <header class="product__header">
@@ -52,7 +52,7 @@
 
                 </section>
             </article>
-            @endforeach -->
+            @endforeach
         </section>
     </div>
 @endsection
