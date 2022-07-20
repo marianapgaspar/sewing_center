@@ -3,9 +3,7 @@
 @section('content')
     <div class="gray-background">
         <section class="contact__block contact-wrapper">
-            <h1 class="display-medium">Cur gemna ire? </h1>
-            <p>Hercle, abnoba dexter!, racana! Hippotoxota noceres, tanquam gratis luna. Lotus, noster lactas rare
-                captis de fortis, audax omnia.</p>
+            <h1 class="display-medium">Entre em contato conosco</h1>
             <section class="contact__options">
 
                 <form class="contact__form" action="{{route('site.contact.form')}}" method="post">
@@ -24,7 +22,7 @@
                     <div>{{ $message }}</div>
                     @enderror
 
-                    <label for="email">Email</label>
+                    <label for="email">E-mail</label>
                     <input id="email" name="email" type="text" tabindex="2" placeholder="Ex: email@email.com.br"
                            value="{{old('email')}}">
                     @error('email')
@@ -38,42 +36,40 @@
                     <div>{{ $message }}</div>
                     @enderror
 
-                    <button class="button button_primary" type="submit">Enviar mensagem</button>
+                    <button class="button button_primary" type="submit">Enviar</button>
                 </form>
 
                 <div class="contact__infos">
                     <div>
                         <div class="contact__infos__header">
                             <img src="{{asset('images/phone-contact-icon.svg')}}" alt="">
-                            <h3 class="title-small">Contato por telefone</h3>
+                            <h3 class="title-small">Telefone</h3>
                         </div>
-                        <a title="clique no número do telefone para ligar" href="tel:169999999">(16) 99999-9999</a>
-                    </div>
-
-                    <div>
-                        <div class="contact__infos__header">
-                            <img src="{{asset('images/mail-contact-icon.svg')}}" alt="">
-                            <h3 class="title-small">Contato por email</h3>
-                        </div>
-                        <a title="Clique no email para enviar email automatico" href="mailto:hortus ">finis </a>
+                        <a title="clique no número do telefone para ligar" href="tel:(47) 3027-3289">(47) 3027-3289</a>
                     </div>
 
                     <div>
                         <div class="contact__infos__header">
                             <img src="{{asset('images/pin-map-contact-icon.svg')}}" alt="">
-                            <h3 class="title-small">Lumens nocere! </h3>
+                            <h3 class="title-small">Nossa localização </h3>
                         </div>
                         <a title="clique no endereço para traçar uma rota" target="_blank"
-                           href="https://www.google.com/maps/dir//Av.+Braz+Olaia+Acosta,+727+-+Jardim+California,+Ribeir%C3%A3o+Preto+-+SP,+14026-040/@-21.2117135,-47.8201906,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94b9beccaaa6dccd:0xc472dcfb494d66a5!2m2!1d-47.8180019!2d-21.2117135">
-                            Av. Brasil, 333<br>
-                            Ribeirão Preto<br>
-                            Bairro Brasil - Ribeirão Preto/SP<br>
-                            CEP: 14444-020
+                           href="https://www.google.com/maps/dir//R.+Itaja%C3%AD,+125+-+Centro+Joinville+-+SC+89201-090/@-26.3045607,-48.8421517,12z/data=!4m5!4m4!1m0!1m2!1m1!1s0x94deb04c8866f491:0x274d0b5b7cb26eda">
+                            Rua Itajaí, 125<br>
+                            Joinville<br>
+                            Centro - Joinville/SC<br>
+                            CEP: 89201-090
                         </a>
-                    </div>
+                    </div>                    
                     <section class="contact__infos__social-media">
-                        <a href="https://www.facebook.com/fertgaia/" target="_blank">Facebook /</a>
-                        <a href="javascript:;"> YouTube</a>
+                    
+                        <a href=" https://www.facebook.com/CentralDaCosturaJoinville/" target="_blank">Facebook</a>
+                        <br>
+                        <br>
+                        <a href="https://web.whatsapp.com/send?phone=554791014745" target="_blank"></i>WhatsApp</a>
+                        <br>
+                        <br>
+                        <a href="https://www.secure.instagram.com/central.da.costura/?hl=am-et" target="_blank">Instagram</a>
                     </section>
                 </div>
             </section>

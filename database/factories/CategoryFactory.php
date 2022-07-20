@@ -17,7 +17,9 @@ class CategoryFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name'=>fake()->sentence(2),
+            'description'=> fake()->sentence(4),
+            'image'=>'images/blog/blake-connally-B3l0g6HLxr8-unsplash.jpg'
         ];
     }
 }

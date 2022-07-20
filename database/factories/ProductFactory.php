@@ -17,7 +17,10 @@ class ProductFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'category_id'=>fake()->numberBetween(1,4),
+            'name'=>fake()->sentence(2),
+            'description'=> fake()->sentence(4),
+            'exclusive'=>fake()->numberBetween(0,1)
         ];
     }
 }

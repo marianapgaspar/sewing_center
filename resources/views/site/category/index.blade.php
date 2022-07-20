@@ -2,17 +2,18 @@
 
 @section('content')
     <header class="common-header">
-        <div class="header-wrapper">
-            <h1 class="title-large">With apples drink teriyaki. </h1>
-        </div>
+        
         <div class="pattern__header"></div>
+        <div class="header-wrapper">
+            <h1 class="title-large">Veja nossos produtos</h1>
+        </div>
     </header>
     <!-- Products list -->
     <div class="gray-background">
         <section class="products__cultivation__category main-wrapper">
             @foreach($categories as $category)
                 <article class="card__product">
-                    <a href="{{route('site.products.category', ['category' => $category])}}">
+                    <a href="{{route('site.products.category', ['slug' => $category->slug])}}">
                         <div class="card__cover">
                             <img src="{{asset($category->image)}}">
                         </div>

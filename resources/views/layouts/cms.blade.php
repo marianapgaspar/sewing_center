@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
 <head>
-    <title>Central da costura</title>
+    <title>Plasmators assimilant in audax hamburgum! Sunt animalises perdere teres, altus calceuses. </title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset="utf-8"/>
@@ -42,9 +42,12 @@
     <link rel="apple-touch-icon" sizes="256x256" href="{{asset('images/Frame.png')}}">
     <link rel="apple-touch-icon" sizes="384x384" href="{{asset('images/Frame.png')}}">
     <link rel="apple-touch-icon" sizes="512x512" href="{{asset('images/Frame.png')}}">
-
+<!-- CSS only -->
     <!-- Lightbox -->
     <link rel="stylesheet" type="text/css" href="{{asset('lightbox/css/lightbox.css')}}"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <nav>
@@ -54,23 +57,19 @@
                 <img src="{{asset('images/Frame.png')}}">
             </a>
             <ul class="navigation__itens" id="menu">
+                
                 <li>
-                    <a href="{{route('site.home')}}">Home
+                    <a href="{{route('site.category.list')}}">Categorias
                         <span class="border-effect"></span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{route('site.products')}}">Produtos
+                    <a href="{{route('site.products.list')}}">Produtos
                         <span class="border-effect"></span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{route('site.about')}}">Sobre
-                        <span class="border-effect"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{route('site.contact')}}">Contato
+                    <a href="{{route('site.products.list')}}">Sair
                         <span class="border-effect"></span>
                     </a>
                 </li>
@@ -88,42 +87,13 @@
 <!-- Hamburger menu list -->
 <div id="resize">
     <ul id="menu">
-        <li><a class="title-medium" href="{{route('site.home')}}">Home</a></li>
-        <li><a class="title-medium" href="{{route('site.products')}}">Products</a></li>
-        <li><a class="title-medium" href="{{route('site.about')}}">About</a></li>
-        <li><a class="title-medium" href="{{route('site.contact')}}">Contact</a></li>
+        <li><a class="title-medium" href="{{route('site.category.list')}}">Categorias</a></li>
+        <li><a class="title-medium" href="{{route('site.products.list')}}">Produtos</a></li>
+        <li><a class="title-medium" href="{{route('site.products.list')}}">Sair</a></li>
     </ul>
 </div>
 
 @yield('content')
-<footer class="main_footer">
-    <div class="dots_pattern"></div>
-    <div class="main-wrapper flex-container">
-        <div class="quality-badge">
-            <p>Entre em contato conosco pelo WhatsApp ou redes sociais</p>
-            <p>Siga-nos nas redes sociais para todas as dicas de costura</p>
-        </div>
-        <ul>
-            <li class="footer__links">
-                <h4 class="title-small">Redes Sociais</h4>
-                <a href=" https://www.facebook.com/CentralDaCosturaJoinville/" target="_blank">Facebook</a>
-                <a href="https://www.secure.instagram.com/central.da.costura/?hl=am-et" target="_blank">Instagram</a>
-            </li>
-            <li class="footer__links">
-                <h4 class="title-small">Empresa</h4>
-                <a href="{{route('site.products')}}">Nossos produtos</a>
-                <a href="{{route('site.about')}}">Localização</a>
-                <a href="{{route('site.contact')}}">Entre em contato</a>
-            </li>
-            <li class="footer__links">
-                <h4 class="title-small">Contatos</h4>
-                <a title="Clique no número do telefone para ligar" href="tel:16999999999">Telefone</a>
-                <a title="Clique no email para enviar email automatico" href="mailto:contato@beerandcode.com
-                .br">Email</a>
-            </li>
-        </ul>
-    </div>
-</footer>
 
 <section class="sub__footer">
     <div class="main-wrapper flex-container">
@@ -151,5 +121,7 @@
         $("#resize").toggleClass("active")
     })
 </script>
+@yield('footer-scripts')
+
 </html>
 
