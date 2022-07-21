@@ -16,7 +16,7 @@
 ## Technologies Used
 - Php 8.1
 - Laravel 9
-- Docker settend by laravel sail
+- Docker configured by laravel sail
 - Mysql
 - Bootstrap
 
