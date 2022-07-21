@@ -34,6 +34,8 @@ Pages made
 ![inserir_categoria](./img/inserir_categoria.jpeg)
 
 ## Setup
+You can install the application with xamp or lamp, but since the application was developed with Laravel Sail, you can install everything using docker. 
+In case you allready have docker installed at your computer, you can follow those steps: 
 After clone the project, run the install command from the Terminal:
 
     ./vendor/bin/sail up -d
