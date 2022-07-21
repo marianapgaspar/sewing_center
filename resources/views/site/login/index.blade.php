@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Login</title>
    <!--Made with love by Mutiullah Samim -->
    
 	<!--Bootsrap 4 CDN-->
@@ -24,16 +24,24 @@
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">
-				<h3>Sign In</h3>
+				<h3>Login</h3>
 			</div>
+			@if($errors->all())
+						@foreach($errors->all() as $error)
+							<div class="alert alert-danger" role="alert">
+								{{$error}}
+							</div>
+						@endforeach
+					@endif
 			<div class="card-body">
+				
 				<form method="POST" action="{{route('site.authenticate')}}" >
 					@csrf
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" name="email" placeholder="E-mail">
+						<input type="text" class="form-control" name="name" placeholder="Nome">
 						
 					</div>
 					<div class="input-group form-group">
@@ -45,6 +53,7 @@
 					<div class="form-group">
 						<input type="submit" value="Login" class="btn float-right login_btn">
 					</div>
+					
 				</form>
 			</div>
 		</div>

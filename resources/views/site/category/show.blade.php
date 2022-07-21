@@ -27,15 +27,15 @@
 
         <section class="products__list">
             <header>
-                <h2 class="title-large">Cum quadra ridetis, omnes visuses imitari regius, brevis brodiumes. </h2>
-                <p>Ususs favere! Tabes grandis palus est. Sunt mensaes magicae fatalis, placidus genetrixes. Cum musa unda, omnes amores attrahendam pius, noster particulaes. </p>
+                <h2 class="title-large">Veja os produtos da categoria {{$category->name}}</h2>
+            
+                <p>Para saber mais sobre valores, frete e prazo de entrega, favor entrar em contato conosco. Veja nossos meios de <a href="{{route('site.contact')}}">contatos</a></p>
             </header>
             @foreach($category->products as $product)
             <article class="product">
                 <a class="clickable-area" href="javascript:;">
                     <header class="product__header">
                         <h3 class="title-medium">{{$product->name}}</h3>
-                        <span class="collapse__open"></span>
                     </header>
                     @if($product->exclusive)
                         <img class="exclusive__label" src="{{asset('images/Exclusivo-label.png')}}" alt="Etiqueta de

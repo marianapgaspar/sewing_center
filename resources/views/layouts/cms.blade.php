@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
 <head>
-    <title>Plasmators assimilant in audax hamburgum! Sunt animalises perdere teres, altus calceuses. </title>
+    <title>Adminstração do site </title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset="utf-8"/>
@@ -69,7 +69,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{route('site.products.list')}}">Sair
+                    <a href="{{route('site.users.list')}}">Usuário
+                        <span class="border-effect"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('site.logout')}}">Sair
                         <span class="border-effect"></span>
                     </a>
                 </li>
@@ -89,7 +94,8 @@
     <ul id="menu">
         <li><a class="title-medium" href="{{route('site.category.list')}}">Categorias</a></li>
         <li><a class="title-medium" href="{{route('site.products.list')}}">Produtos</a></li>
-        <li><a class="title-medium" href="{{route('site.products.list')}}">Sair</a></li>
+        <li><a class="title-medium" href="{{route('site.users.list')}}">Usuários</a></li>
+        <li><a class="title-medium" href="{{route('site.logout')}}">Sair</a></li>
     </ul>
 </div>
 
@@ -97,7 +103,7 @@
 
 <section class="sub__footer">
     <div class="main-wrapper flex-container">
-        <a href="{{route('site.login')}}"><img src="{{asset('images/Lock-icon.svg')}}">CMS</a>
+        <a href="{{route('site.cms')}}"><img src="{{asset('images/Lock-icon.svg')}}">CMS</a>
         <a href="#" target="_blank">Produzido por <strong>Mariana Pacheco Gaspar</strong></a>
     </div>
 </section>

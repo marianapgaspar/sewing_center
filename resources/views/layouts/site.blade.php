@@ -127,7 +127,7 @@
 
 <section class="sub__footer">
     <div class="main-wrapper flex-container">
-        <a href="{{route('site.login')}}"><img src="{{asset('images/Lock-icon.svg')}}">CMS</a>
+        <a href="{{route('site.cms')}}"><img src="{{asset('images/Lock-icon.svg')}}">CMS</a>
         <a href="#" target="_blank">Produzido por <strong>Mariana Pacheco Gaspar</strong></a>
     </div>
 </section>

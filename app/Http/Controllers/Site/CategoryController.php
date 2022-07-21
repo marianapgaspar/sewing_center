@@ -32,7 +32,7 @@ class CategoryController extends Controller
     public function show($slug)
     {
         $category = Category::whereSlug($slug)->first();
-        return view('site.category.show', ['category' => $category->load('categories')]);
+        return view('site.category.show', ['category' => $category->load('products')]);
     }
     
     /**
